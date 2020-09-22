@@ -1,0 +1,95 @@
+/* Reusable classes */
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-shadow {
+    text-shadow: 2px 0 0 var(--dark-black), -2px 0 0 var(--dark-black), 0 2px 0 var(--dark-black), 0 -2px 0 var(--dark-black), 1px 1px var(--dark-black), -1px -1px 0 var(--dark-black), 1px -1px 0 var(--dark-black), -1px 1px 0 var(--dark-black);
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--dark-blue);
+    padding: 3rem;
+    margin: 5% 5% 30% 5%;
+    border-radius: 5rem;
+    border: 1px solid;
+    box-shadow: 1px 1px var(--dark-black);
+}
+
+.text-container li {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.visible {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    animation: fadeIn 0.5s linear 1;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.option {
+    background-color: var(--white);
+    cursor: pointer;
+    margin-bottom: 1.2rem;
+}
+
+.option:hover {
+    transition: color 1s ease, background-color 1s ease,
+        border-bottom-color 1s ease;
+}
+
+/*
+.jsBlue{
+    background: var(--blue);
+}
+.jsBlack{
+    background: var(--black);
+}*/
+.product {
+    max-width: 320px;
+    max-height: 240px;
+}
+
+.z-index-fix {
+    z-index: 2;
+    position: relative;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}

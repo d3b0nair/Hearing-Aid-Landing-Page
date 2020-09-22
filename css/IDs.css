@@ -1,0 +1,90 @@
+/* by ID */
+#home {
+    display: block;
+}
+
+#hero {
+    position: fixed;
+    min-width: auto;
+    min-height: 400px;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#home button {
+    margin-top: 3rem;
+    margin-right: 1rem;
+    font-size: 2em;
+}
+
+
+
+#p0-5,
+#p1,
+#p2,
+#p3 {
+    display: none;
+}
+
+
+#loader {
+    border: 12px solid var(--white);
+    border-radius: 50%;
+    border-top: 12px solid #2dabff;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+
+#home h1 {
+    font-size: 2.8rem;
+    padding: 1rem;
+    text-shadow: 2px 2px black;
+}
+
+
+#logo {
+    max-width: 537px;
+    max-height: 134px;
+}
+
+#home p {
+    font-size: 2.8rem;
+    padding: 1rem;
+    text-shadow: 2px 2px black;
+    margin-right: 1rem;
+}
+
+#banner {
+    border-radius: 20px;
+    border: 3px solid var(--black);
+}
+
+#thinking-img {
+    border-radius: 20px;
+}
+
+#p0-5 ul,
+#p1 ul {
+    margin-bottom: 5%;
+    padding-right: 1rem;
+}
+
+#p0-5 ul {
+    padding-left: 3rem;
+    list-style-type: circle;
+}
+
+#p1 ul {
+    padding-left: 3.5rem;
+    list-style-type: decimal;
+}
+
+#p0-5 li,
+#p1 li {
+    font-size: 1.5rem;
+}
