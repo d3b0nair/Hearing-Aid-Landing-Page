@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap");
+
+:root {
+  --white: rgb(239, 236, 236);
+  --black: rgb(89, 89, 87);
+  --dark-black: rgb(54, 52, 52);
+  --blue: rgb(45, 171, 255);
+  --bright-green: rgb(61, 189, 93);
+}
+
+/* global stuff */
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+html,
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  list-style-type: none;
+  color: var(--white);
+  line-height: 1.6;
+}
+
+p {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: var(--white);
+  text-shadow: 2px 0 0 var(--dark-black), -2px 0 0 var(--dark-black),
+    0 2px 0 var(--dark-black), 0 -2px 0 var(--dark-black),
+    1px 1px var(--dark-black), -1px -1px 0 var(--dark-black),
+    1px -1px 0 var(--dark-black), -1px 1px 0 var(--dark-black);
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: var(--white);
+  text-shadow: 2px 0 0 var(--dark-black), -2px 0 0 var(--dark-black),
+    0 2px 0 var(--dark-black), 0 -2px 0 var(--dark-black),
+    1px 1px var(--dark-black), -1px -1px 0 var(--dark-black),
+    1px -1px 0 var(--dark-black), -1px 1px 0 var(--dark-black);
+}
+
+p,
+h1 {
+  line-height: 1.6;
+}
+
+button {
+  color: var(--white);
+  background-color: var(--blue);
+  border-color: var(--dark-black);
+  cursor: pointer;
+  border-radius: 1rem;
+  text-indent: 0rem !important;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  padding: 0.5em 1em 0.5em 1em;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 0 0 var(--dark-black), -2px 0 0 var(--dark-black),
+    0 2px 0 var(--dark-black), 0 -2px 0 var(--dark-black),
+    1px 1px var(--dark-black), -1px -1px 0 var(--dark-black),
+    1px -1px 0 var(--dark-black), -1px 1px 0 var(--dark-black);
+  text-shadow: 2px 0 0 var(--dark-black), -2px 0 0 var(--dark-black),
+    0 2px 0 var(--dark-black), 0 -2px 0 var(--dark-black),
+    1px 1px var(--dark-black), -1px -1px 0 var(--dark-black),
+    1px -1px 0 var(--dark-black), -1px 1px 0 var(--dark-black);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+button:hover {
+  background: var(--bright-green);
+  color: var(--white);
+}
+
+button:after {
+  content: "";
+  background: var(--white);
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 1s;
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+header {
+  z-index: 1;
+}
+
+::placeholder {
+  color: var(--blue);
+  font-size: 1.5rem;
+}
+
+select {
+  font-size: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--blue);
+  padding: 1.5rem;
+  margin: 1rem;
+  appearance: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  white-space: pre;
+  text-overflow: ellipsis;
+  transition: color 1s ease, background-color 1s ease,
+    border-bottom-color 1s ease;
+}
+
+select:hover,
+select:focus {
+  border-bottom-color: #dcdcdc;
+  border: 2px inset var(--blue);
+}
+
+select:focus {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+select option {
+  text-align: center;
+  background-color: var(--dark-black);
+  color: var(--white);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px var(--blue) inset;
+  -webkit-box-shadow: 0 0 0 30px var(--blue) inset;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--white);
+}
+
+input,
+button,
+select,
+textarea {
+  border: 2px outset black;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+input,
+textarea {
+  font-size: 1.5rem;
+  color: var(--blue);
+  margin: 1rem;
+  transition: color 1s ease, background-color 1s ease,
+    border-bottom-color 1s ease;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+input:hover,
+textarea:hover {
+  border: 2px inset var(--blue);
+}
+
+input:focus,
+textarea:focus {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+label {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+textarea {
+  margin-bottom: 1.5rem;
+  text-align: left !important;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--blue);
+}
+
+/* quick fix of hero img */
+h1,
+p,
+img,
+button {
+  z-index: 2;
+}
+
+iframe {
+  margin: 1rem;
+}
