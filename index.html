@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="d3b0nair">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/IDs.css">
+  <link rel="stylesheet" href="css/classes.css">
+  <link rel="stylesheet" href="css/nav-bar.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script src="js/main.js"></script>
+
+  <title>Кабінет Слухової Допомоги</title>
+</head>
+<header>
+  <div class="container"><img id="logo" src="img/available_styles_phone.png" alt="website logo"></div>
+  <nav>
+    <label>
+      <input id="checkbox" onclick="openMenu()" type='checkbox'>
+      <span id="span" class="menu jsBlack">
+        <span class='hamburger'></span>
+      </span>
+      <ul id="menu" class="text-center">
+        <li>
+          <p>Карта веб-сайту</p>
+        </li>
+        <li>
+          <a onclick="pageSwitch('p0')" href="#">Головна сторінка</a>
+        </li>
+        <li>
+          <a onclick="pageSwitch('p0-5')" href="#">Перелік наших послуг</a>
+        </li>
+        <li>
+          <a onclick="pageSwitch('p1')" href="#">Чи потрібна мені слухова домога?</a>
+        </li>
+        <li>
+        </li>
+        <li>
+          <a onclick="pageSwitch('p2')" href="#">Слухові апарати
+          </a>
+        </li>
+        <li>
+          <a onclick="pageSwitch('p3')" href="#">Запис на консултацію
+          </a>
+        </li>
+      </ul>
+    </label>
+  </nav>
+</header>
+
+<body>
+  <div id="loader" class="center"></div>
+  <div class="container">
+    <div id="p0" class="page">
+      <section id="home">
+        <div class="text-right">
+          <div class="z-index-fix">
+            <p>Шепіт улюбленої людини. Вигук радості. Слова захоплення. Дзвін келихів.</p>
+            <p>Слух - це більше, ніж сприйняття звуків.</p>
+          </div>
+          <button onclick="pageSwitch('p1')" class="text-center">Відкрийте слух заново</button>
+        </div>
+        <img id="hero" src="img/hand.png" alt="слуховий апарат">
+      </section>
+    </div>
+    <div id="p0-5" class="page">
+      <section id="edit-this">
+        <div class="text-container">
+          <div class="container"><img id="banner" src="img/banner.png" alt="доктор підбирає жінці слуховий апарт"></div>
+          <h1 class="text-center">Перелік наших послуг</h1>
+          <ul>
+            <li>Діагностика слуху</li>
+            <li>Слухові апарати провідних фірм</li>
+            <li>Підбір, налаштування та сервісне обслуговування слухових апаратів</li>
+            <li>Підтримка в адаптації клієнта до слухового апарату</li>
+            <li>Гарантійне та сервісне обслуговування придбаних у нас слухових апаратів</li>
+            <li>Комплектуючі вироби до СА (фільтри, батарейки, вкладки)</li>
+            <li>Індивідуальні вушні вкладки</li>
+          </ul>
+
+          <p>Ми прагнемо надати допомогу всім, хто її потребує!
+            У нас Ви можете підібрати слуховий апарат згідно свого стану і найвищим вимогам до функціоналу
+            (Преміум, Бізнес, Базовий, Економ).
+            Для пенсіонерів діє гнучка система знижок при наявності пенсійного посвідчення.
+          </p>
+          <button onclick="pageSwitch('p3')" class="text-center">Запис на консульнацію</button>
+          <button onclick="pageSwitch('p2')" class="text-center">Слухові Апарати</button>
+        </div>
+      </section>
+    </div>
+    <div id="p1" class="page">
+      <section id="firstPage">
+        <div class="text-container">
+          <div class="container"><img id="thinking-img" src="img/thinking.png" alt="пристарілий чоловік задумався">
+          </div>
+          <h1 class="text-center">Перевірте свій слух</h1>
+          <p class="text-left">
+          <ul class="text-shadow">
+            <li>Чи трапляється Вам не чути стук в двері або дзвінок телефону?</li>
+            <li>Чи відчуваєте Ви складнощі при розмові по телефону?</li>
+            <li>Чи часто Вас просять говорити тихіше?</li>
+            <li>Чи немає у Вас відчуття, що Ваш слух залежить від погоди?</li>
+            <li>Чи важче Вам розчути співрозмовника в шумній обстановці або при груповій бесіді?</li>
+            <li>Чи скаржаться Ваші домашні на те, що Ви включаєте телевізор занадто голосно?</li>
+            <li>Чи немає у Вас відчуття, що низькі чоловічі голоси Ви чуєте краще, ніж жіночі і дитячі?</li>
+            <li>Чи стараєтеся Ви в театрі або на концерті сісти ближче до сцени, щоб краще усе розчути?</li>
+            <li>Чи виникає у Вас відчуття, що більшість людей говорять нечітко?</li>
+          </ul>
+          </p>
+          <p>Якщо Ви відповіли на декілька питань "так", записуйтесь до нас на консульнацію або перегляньте слухові
+            аппарати.</p>
+          <button onclick="pageSwitch('p0-5')" class="text-center">Перелік наших послуг</button>
+          <button onclick="pageSwitch('p2')" class="text-center">Слухові Апарати</button>
+          <button onclick="pageSwitch('p3')" class="text-center">Запис на консульнацію</button>
+        </div>
+      </section>
+    </div>
+    <div id="p2" class="page">
+      <section id="secondPage">
+        <div class="text-container">
+          <h1 class="text-center">Типи слухових апаратів: </h1>
+          <img class="product" src="img/product1.png" alt="Завушний слуховий апарат">
+          <p class="text-center">Завушні (BTE) - розміщуються за вухом людини.</p>
+          <img class="product" src="img/product2.png" alt="Внутрішньовушні слуховий апарат">
+          <p class="text-center">Внутрішньовушні (ITE) - вставляються у вухо.</p>
+          <img class="product" src="img/product3.png" alt="Внутріканальні слуховий апарат">
+          <p class="text-center">Внутріканальні (CIC) - вставляються глибоко у вушний
+            канал.</p>
+          <h1 class="text-center">Коротко про слухові апарати</h1>
+          <p>Незважаючи на невеликий розмір сучасних слухових апаратів залишається висока якість відтворення звуку і
+            прекрасна фільтрація шумів. Цифрова обробка сучасних слухових апаратів забезпечує чисте і неспотворене
+            відтворення отриманого звуку в різних акустичних ситуаціях.</p>
+
+          <p>Пройшовши діагностику слуху в нашому кабінеті слухової допомоги, підібравши слуховий апарат і почавши
+            користуватися ним, Ви можете розірвати замкнутий круг проблем, пов'язаних з порушеннями слуху, і знову
+            насолоджуватися раніше втраченими мелодіями життя. Кабінет слухової допомоги надає комплексну допомогу у
+            вирішенні проблем з порушеннями слуху.</p>
+          <button onclick="pageSwitch('p3')" class="text-center">Запис на консульнацію</button>
+        </div>
+      </section>
+    </div>
+    <div id="p3" class="page">
+      <section id="thirdPage">
+        <div class="text-container">
+          <h1 class="text-center">Контакта інформація</h1>
+          <div id="info" class="text-center">
+            <p>Адреса:</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10351.595925727624!2d25.604923!3d49.5619292!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9c8a2737da7a4cf0!2sSlukhservis!5e0!3m2!1sen!2sus!4v1599947038890!5m2!1sen!2sus"
+              width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+            <p><a href="https://goo.gl/maps/sHppTRroQKsnZZKp7">Митрополита Шептицького, 4а, Тернопіль, Тернопільська
+                область, 46002</a></p>
+            <p>Моб. тел.:</p>
+            <p> <a href="tel:+12-123-123-1234">(123) 123-1234</a>, <a href="tel:+38-321-321-4321">(321) 321-4321</a>
+            </p>
+            <p>E-mail:</p>
+            <p> <a href="mailto:email@email.com">email@email.com</a></p>
+            <p>Графік роботи кабінету слухової допомоги:</p>
+            <p style="color:var(--blue); line-height: 0.3;">пн-пт: 10:00-16:00,</p>
+            <p style="color:var(--blue); line-height: 0.3;">сб: за попереднім записом,</p>
+            <p style="color:var(--blue); line-height: 0.3;">нд: вихідний.</p>
+          </div>
+          <form id="form1" class="container text-shadow">
+            <h1 class="text-center">Замовлення зворотнього дзвінка</h1>
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" placeholder="Обовз'яково" required>
+            <label for="email" name="email">Електрона адреса:</label>
+            <input type="text" name="email" id="email" placeholder="Не обовз'яково">
+            <label for="phone">Номер мобільного телефону:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}||[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="Обовз'яково (формат 123-456-7890)" required>
+            <label id="sat-lvl" for="time">Коли вам зручно отримати від нас дзвінок:</label>
+            <select name="time" id="time" class="option" required>
+              <option value="з 10:00 по 11:00">10:00-11:00</option>
+              <option value="з 11:00 по 12:00">11:00-12:00</option>
+              <option value="з 13:00 по 14:00">13:00-14:00</option>
+              <option value="з 15:00 по 16:00">15:00-16:00</option>
+              <option value="в любу" selected>В любу годину</option>
+            </select>
+            <label for="message">Повідомлення (Не обовз'яково):</label>
+            <textarea type="text" name="message" id="message"
+              placeholder="Я би хотів підібрати не дорогий слуховий апарат..."></textarea>
+          </form>
+          <button onclick="submit()" type="button" id="btn-send" class="button submit-button">Відправити</button>
+
+
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>
